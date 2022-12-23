@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/frame_ProfileFragment_host"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Profile.ProfileFragment">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_200"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlv_ProfileFragment_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_ProfileFragment_warring"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:paddingBottom="16dp"
+            app:cardCornerRadius="8dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+
+                android:id="@+id/imv_ProfileFragment_danger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="8dp"
+                app:srcCompat="@drawable/danger_vector" />
+
+            <TextView
+                android:id="@+id/txt_ProfileFragment_meesage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="88dp"
+                android:gravity="center_horizontal"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/stxt_profile_check"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/txt_ProfileFragment_login"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="86dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/stxt_login"
+                android:layout_marginRight="86dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btn_p500_shape"
+                android:gravity="center"
+                android:textColor="@color/white"
+                />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <ProgressBar
+            android:id="@+id/pb_ProfileFragment_loading"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/progressbar_circle_shape" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+        <RelativeLayout
+            android:id="@+id/RL_fragp_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imv_ProfileFragment_background"
+                android:layout_width="match_parent"
+                android:layout_height="260dp">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/abstractpaper" />
+
+                <ImageView
+                    android:id="@+id/imv_ProfileFragment_imageprofile"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40dp"
+                    app:srcCompat="@drawable/profileaddimage_vector" />
+
+
+                <ImageView
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40dp"
+                    app:srcCompat="@drawable/add_vector" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_ProfileFragment_cardnamephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/cv_btn"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginBottom="-20dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_ProfileFragment_nameuser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawablePadding="8dp"
+                        android:paddingTop="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:drawableRightCompat="@drawable/ic_person_24dp" />
+
+
+                    <!--                    <LinearLayout-->
+
+
+                    <!--                        android:layout_marginTop="8dp"-->
+                    <!--                        android:id="@+id/line_dpa_42"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="0.00001dp"-->
+                    <!--                        android:background="@color/grayl"-->
+                    <!--                        android:orientation="horizontal" />-->
+
+
+                    <TextView
+                        android:id="@+id/txt_ProfileFragment_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/iran_yekan_reqular_mobile_fa_num"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imv_ProfileFragment_background"
+                android:layout_marginTop="40dp"
+                android:background="@color/white"
+                app:cardCornerRadius="4dp">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rv_ProfileFragment_items"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
+
+
+</FrameLayout>

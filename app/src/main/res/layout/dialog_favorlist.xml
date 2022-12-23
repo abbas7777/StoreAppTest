@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+
+
+
+
+<TextView
+    android:gravity="center"
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="4dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginTop="16dp"
+    android:text="@string/sdl_dialog_favor"
+    android:textColor="@color/gray_600"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+<LinearLayout
+    android:layoutDirection="rtl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:id="@+id/txt_dialogFavor_yes"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="40dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="58dp"
+        android:background="@drawable/btn_edge_white_shape"
+        android:gravity="center"
+        android:text="@string/sbtn_yes"
+        android:textColor="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/txt_dialogFavor_no"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="40dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="58dp"
+        android:background="@drawable/btn_edge_p500_shape"
+        android:gravity="center"
+        android:text="@string/sbtn_no"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

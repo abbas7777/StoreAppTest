@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="170dp"
+    android:layout_height="310dp"
+    android:id="@+id/cv_itemproduct_parent"
+    android:layout_marginLeft="4dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginBottom="8dp"
+    android:layoutDirection="rtl"
+    app:cardCornerRadius="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/imv_itemproduct_image"
+            android:layout_width="140dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="4dp"
+            tools:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/txt_itemproduct_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="4dp"
+            android:layoutDirection="rtl"
+            android:maxLines="2"
+            android:minLines="2"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:text=" یلابلبلابلبلابلابلابلابلابلابلابلابلابلابلابلوز زنانه کیکی رایکی مدل bb028" />
+
+        <TextView
+            android:id="@+id/txt_itemproduct_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="6dp"
+            android:textColor="@color/black"
+            tools:text="25550000  تومان" />
+
+        <TextView
+            android:id="@+id/txt_itemproduct_pprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/gray_500"
+            android:textSize="10sp"
+            tools:text="25550000  تومان" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_100"
+    tools:context=".Cart.CartFragment">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_CartFragment_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/cv_CartFragment_bottomToolBar"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:id="@+id/imv_CartFragment_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="220dp"
+        android:visibility="visible"
+        app:srcCompat="@drawable/emptycart_vector" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imv_CartFragment_empty"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-210dp"
+        android:id="@+id/txt_CartFragment_emptycart"
+        android:text="@string/stxt_BasketActivity_empty"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/rvlayout_CartFragment_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:elevation="42dp"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:id="@+id/linlay_CartFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imv_CartFragment_noconection"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:visibility="visible"
+                app:srcCompat="@drawable/noconnectioan_vector" />
+
+            <TextView
+                android:id="@+id/txt_CartFragment_notfound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:drawablePadding="4dp"
+                android:text="@string/stxt_chatfragment_problemconnecttoserver"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/txt_CartFragment_tryagain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="46dp"
+                android:drawablePadding="8dp"
+                android:text="@string/stxt_Splash_tryagain"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:visibility="visible"
+                app:drawableRightCompat="@drawable/tryagain_vector" />
+        </LinearLayout>
+
+
+        <ProgressBar
+            android:id="@+id/pb_CartFragment_loading"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/progressbar_circle_shape" />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_CartFragment_bottomToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-32dp"
+        android:visibility="visible"
+        app:cardCornerRadius="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="32dp"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+
+
+            <TextView
+                android:id="@+id/txt_CartFragment_totalPrice"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="11dp"
+                android:layout_marginRight="26dp"
+                android:layout_weight="0.5"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/btn_CartFragment_keepOnBuy"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="26dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/btn_p500_shape"
+                android:text="@string/btn_keepOnBuy"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wave"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".Regster.RegesterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="30dp"
+            app:cardCornerRadius="30dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <TextView
+                    style="@style/TextViewCustom"
+                    android:id="@+id/txt_RegesterActivity_regester"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/aghavan"
+                    android:text="@string/btn_name_regester"
+                    android:textColor="@color/black"
+                    android:textSize="46sp" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etxt_regesterac_namelay"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_below="@id/txt_RegesterActivity_regester"
+                    android:layout_marginTop="16dp"
+                    app:boxBackgroundMode="none"
+                    android:clipChildren="false"
+                    android:textColorHint="@color/black"
+                    app:hintTextAppearance="@style/MyHintStyle"
+                    app:hintTextColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:id="@+id/etxt_RegesterActivity_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/txt_regesterac_regester"
+                        android:layout_marginLeft="26dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="26dp"
+                        android:background="@drawable/etxt_shape"
+                        android:hint="@string/etxt_name_hint"
+                        android:maxLength="40"
+                        android:paddingTop="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="@color/purple_500"
+                        android:textColorHint="@color/black"
+                        android:textCursorDrawable="@drawable/curseretxt_shape"
+                        android:translationY="10dp" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etxt_regesterac_phonelay"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    app:boxBackgroundMode="none"
+                    android:layout_below="@id/etxt_regesterac_namelay"
+                    android:layout_marginTop="12dp"
+                    android:clipChildren="false"
+                    android:textColorHint="@color/black"
+                    app:hintTextAppearance="@style/MyHintStyle"
+                    app:hintTextColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:paddingTop="8dp"
+                        android:id="@+id/etxt_RegesterActivity_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="26dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="26dp"
+                        android:background="@drawable/etxt_shape"
+                        android:fontFamily="@font/iran_yekan_reqular_mobile_fa_num"
+                        android:gravity="center_vertical|start"
+                        android:hint="@string/etxt_phone_hint"
+                        android:inputType="phone"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="@color/purple_500"
+                        android:textColorHint="@color/black"
+                        android:textCursorDrawable="@drawable/curseretxt_shape"
+                        android:translationY="10dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etxt_regesterac_passlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    app:boxBackgroundMode="none"
+                    android:layout_below="@id/etxt_regesterac_phonelay"
+                    android:layout_marginTop="12dp"
+                    android:clipChildren="false"
+                    android:textColorHint="@color/black"
+                    app:hintTextAppearance="@style/MyHintStyle"
+                    app:hintTextColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:id="@+id/etxt_RegesterActivity_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/etxt_RegesterActivity_phone"
+                        android:layout_marginLeft="26dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="26dp"
+                        android:background="@drawable/etxt_shape"
+                        android:fontFamily="@font/iran_yekan_reqular_mobile_fa_num"
+                        android:gravity="center_vertical|start"
+                        android:hint="@string/etxt_password_hint"
+                        android:inputType="textPassword"
+                        android:paddingStart="56dp"
+                        android:paddingTop="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="@color/purple_500"
+                        android:textColorHint="@color/black"
+                        android:textCursorDrawable="@drawable/curseretxt_shape"
+                        android:translationY="10dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <ImageView
+                    android:id="@+id/imv_RegesterActivity_showpass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etxt_regesterac_phonelay"
+                    android:layout_marginLeft="38.7dp"
+                    android:layout_marginTop="51.9dp"
+                    app:srcCompat="@drawable/ic_visibility_black_24dp" />
+
+                <CheckBox
+                    android:id="@+id/chb_RegesterActivity_laws"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etxt_regesterac_passlay"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginRight="26dp"
+                    android:buttonTint="@color/purple_500"
+                    android:gravity="center"
+                    android:layoutDirection="rtl"
+                    android:outlineSpotShadowColor="@color/purple_500"
+                    android:textColor="@color/purple_500"
+                    android:textDirection="rtl"
+                    android:textSize="13sp"
+                    app:buttonTint="@color/purple_500" />
+
+                <TextView
+                    android:id="@+id/txt_regesterac_laws"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etxt_regesterac_passlay"
+                    android:layout_marginTop="40dp"
+                    android:layout_toLeftOf="@id/chb_RegesterActivity_laws"
+                    android:gravity="center"
+                    android:text="@string/stxt_regesterac_laws"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_regester_sumbit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/chb_RegesterActivity_laws"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="52dp"
+                    android:background="@drawable/btn_regster_selector"
+                    android:enabled="false"
+                    android:text="@string/btn_sumbit_name"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+</ScrollView>

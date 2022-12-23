@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_100"
+    android:orientation="vertical"
+    tools:context=".Daste.EnLayout.FilterFragment">
+
+
+
+        <RelativeLayout
+            android:elevation="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/gray_100">
+
+            <ImageView
+                android:id="@+id/imv_FilterFragment_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="8dp"
+                android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                app:tint="@color/gray_600" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:layout_toLeftOf="@id/imv_FilterFragment_back"
+                android:text="@string/stxt_filter"
+                android:textSize="14sp"
+                app:tint="@color/gray_600" />
+
+
+        </RelativeLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_FilterFragment_values"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

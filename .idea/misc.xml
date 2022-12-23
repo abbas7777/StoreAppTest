@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/3.xml" value="0.1" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/add_vector.xml" value="0.141" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/addtocart_vector.xml" value="0.186" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/atxtcomshape.xml" value="0.141" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/backprofile_vector.xml" value="0.141" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/btn_edge_p500_shape.xml" value="0.124" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/btn_edge_white_shape.xml" value="0.124" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/btn_p500_shape.xml" value="0.141" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/btn_p50_shape.xml" value="0.141" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/btn_p700_shape.xml" value="0.141" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/btn_profile_shape.xml" value="0.141" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/btn_regster_selector.xml" value="0.141" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/cart_vector.xml" value="0.1215" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/comments_vector.xml" value="0.13" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/comments_white_vector.xml" value="0.13" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/curseretxt_shape.xml" value="0.141" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/danger_vector.xml" value="0.141" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/editprofile_vector.xml" value="0.141" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/elbtn_edge_white_shape.xml" value="0.129" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/emptycart_vector.xml" value="0.1" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/etxt_shape.xml" value="0.141" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/filter_vector.xml" value="0.124" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/home_vector.xml" value="0.1215" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/ic_baseline_chevron_left_24.xml" value="0.141" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.138" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.129" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/ic_baseline_disslike_alt_24.xml" value="0.13" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.138" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.138" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/ic_baseline_like_alt_24.xml" value="0.13" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.123" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/ic_cart_gray_vector.xml" value="0.138" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/ic_cart_vector.xml" value="0.1215" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/ic_disslike_gray500_vector.xml" value="0.11" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/ic_home_vector.xml" value="0.1215" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/ic_like_gray500_vector.xml" value="0.11" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/ic_like_vector.xml" value="0.1" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/ic_navigate_before_black_24dp.xml" value="0.141" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/ic_person_24dp.xml" value="0.141" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/ic_profile_vector.xml" value="0.1215" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/ic_sort_vector.xml" value="0.1305" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/ic_visibility_black_24dp.xml" value="0.141" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/ic_visibility_off_black_18dp.xml" value="0.141" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/infos_vector.xml" value="0.186" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/layer_list_like.xml" value="0.13" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/linlay_itemcats_shape.xml" value="0.141" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/linlayout_itemproperties_shape.xml" value="0.13" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/logout_vector.xml" value="0.141" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/noconnectioan_vector.xml" value="0.186" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/order_vector.xml" value="0.124" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/otherseller_vector.xml" value="0.186" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/pencell_vector2.xml" value="0.11" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/profile_vector.xml" value="0.1215" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/profileaddimage_vector.xml" value="0.141" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/prograssbar_shape.xml" value="0.141" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/progressbar_circle_shape.xml" value="0.141" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/prop_vector.xml" value="0.13" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/radio_checked.xml" value="0.1305" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/radio_unchecked.xml" value="0.1305" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/radiobutton_drawable.xml" value="0.1305" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/set_start_vector.xml" value="0.124" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/tryagain_vector.xml" value="0.186" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/txt_circle_shape.xml" value="0.124" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/txt_green_shape.xml" value="0.11" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/txt_red_shape.xml" value="0.11" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/txt_suggested_shape.xml" value="0.13" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/txt_toolbar_shape.xml" value="0.123" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/vd_vector (10).xml" value="0.13" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/vd_vector (3).xml" value="0.14" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/vd_vector (4).xml" value="0.14" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/vd_vector (5).xml" value="0.14" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/drawable/vd_vector (6).xml" value="0.14" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/font/fontfamily.xml" value="0.1" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/activity_add_comment.xml" value="0.2" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/activity_comment.xml" value="0.1675929884566054" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/activity_connect.xml" value="0.1675929884566054" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/activity_detail.xml" value="0.22" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/activity_en_layout.xml" value="0.18" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/activity_login.xml" value="0.10526315789473684" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/activity_main2.xml" value="0.19010416666666666" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/activity_properties.xml" value="0.2" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/activity_regester.xml" value="0.2" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/activity_search.xml" value="0.25" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/dialog_basket.xml" value="0.1675929884566054" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/dialog_favorlist.xml" value="0.16547066272688898" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/dialog_loading.xml" value="0.1675929884566054" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/dialog_loding.xml" value="0.1675929884566054" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/dialog_logout.xml" value="0.1675929884566054" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/expandable_sort_content.xml" value="0.22" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/expandable_sort_header.xml" value="0.21" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/fragment_account_infos.xml" value="0.22" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/fragment_cart.xml" value="0.21" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/fragment_content_home.xml" value="0.19010416666666666" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/fragment_daste.xml" value="0.16126042632066728" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/fragment_favor.xml" value="0.1675929884566054" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/fragment_filter.xml" value="0.1675929884566054" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/fragment_profile.xml" value="0.21" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/item_basket.xml" value="0.25" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/item_btnprofile.xml" value="0.1675929884566054" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/item_cats.xml" value="0.33" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/item_comment.xml" value="0.22" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/item_datste.xml" value="0.1675929884566054" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/item_favorit.xml" value="0.21" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/item_filter.xml" value="0.21" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/item_filter_value.xml" value="0.1675929884566054" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/item_images.xml" value="0.20416666666666666" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/item_newproducts.xml" value="0.20416666666666666" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/item_products.xml" value="0.33" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/item_search.xml" value="0.32222222222222224" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/item_title_properties.xml" value="0.16547066272688898" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/item_txtsh.xml" value="0.20416666666666666" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/layout/item_value_properties.xml" value="0.25" />
+        <entry key="..\:/Barname Nevisi/proj/andriod/StoreAppTest/app/src/main/res/menu/menu_navigation_items.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Daste.EnLayout.EnLayoutActivity">
+
+    <RelativeLayout
+        android:elevation="4dp"
+        android:id="@+id/rlLayout_EnLayoutActivity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/imv_EnLayoutActivity_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_baseline_close_24" />
+
+        <TextView
+            android:id="@+id/txt_EnLayoutActivity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@id/imv_EnLayoutActivity_close"
+            android:textSize="18sp"
+            tools:text="@string/sbtn_DeatalActivity_properties" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/exp_EnlayoutActivity_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linlayout_EnLayoutActivity_sort"
+            app:el_duration="800"
+            app:el_expanded="false"
+            app:el_parallax="0.5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbtn_EnLayoutActivity_mostSell"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:layoutDirection="rtl"
+                    android:text="@string/stxt_mostSell"
+                    android:textColor="@color/gray_600"
+                    android:textSize="14sp"
+                    android:theme="@style/MyRadioButton" />
+
+                <RadioButton
+                    android:id="@+id/rbtn_EnLayoutActivity_mostView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:text="@string/stxt_mostViews"
+                    android:textColor="@color/gray_600"
+                    android:textSize="14sp"
+                    android:theme="@style/MyRadioButton" />
+
+                <RadioButton
+                    android:id="@+id/rbtn_EnLayoutActivity_highestPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:text="@string/stxt_highestPrice"
+                    android:textColor="@color/gray_600"
+                    android:textSize="14sp"
+                    android:theme="@style/MyRadioButton" />
+
+                <RadioButton
+                    android:id="@+id/rbtn_EnLayoutActivity_lowestPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:text="@string/stxt_lowestPrice"
+                    android:textColor="@color/gray_600"
+                    android:textSize="14sp"
+                    android:theme="@style/MyRadioButton" />
+
+                <RadioButton
+                    android:id="@+id/rbtn_EnLayoutActivity_newProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:text="@string/stxt_newProduct"
+                    android:textColor="@color/gray_600"
+                    android:textSize="14sp"
+                    android:theme="@style/MyRadioButton" />
+            </LinearLayout>
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/exp_EnlayoutActivity_filter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:el_duration="800"
+            android:layout_below="@id/linlayout_EnLayoutActivity_sort"
+            app:el_expanded="false"
+            app:el_parallax="0.5">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_EnLayoutActivity_filterItem"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="50dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btn_EnLayoutActivity_filter"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="@string/sbtn_showProduct"
+                app:backgroundTint="@null"
+                android:background="@drawable/linlayout_itemproperties_shape"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:id="@+id/linlayout_EnLayoutActivity_sort"
+            android:layout_width="match_parent"
+            android:layoutDirection="ltr"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_EnLayoutActivity_sort"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginRight="26dp"
+                android:layout_weight="0.5"
+                android:drawableRight="@drawable/ic_sort_vector"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="@string/stxt_sort"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="0.5"
+                android:layout_marginRight="16dp"
+                android:id="@+id/txt_EnLayoutActivity_filter"
+                android:drawableRight="@drawable/filter_vector"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="@string/stxt_filter"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlLayout_EnLayoutActivity_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:elevation="42dp"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:id="@+id/linlay_EnLayoutActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imv_EnLayoutActivity_noconection"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:visibility="visible"
+                app:srcCompat="@drawable/noconnectioan_vector" />
+
+            <TextView
+                android:id="@+id/txt_EnLayoutActivity_notfound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:drawablePadding="4dp"
+                android:text="@string/stxt_chatfragment_problemconnecttoserver"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/txt_EnLayoutActivity_tryagain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="46dp"
+                android:drawablePadding="8dp"
+                android:text="@string/stxt_Splash_tryagain"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:visibility="visible"
+                app:drawableRightCompat="@drawable/tryagain_vector" />
+        </LinearLayout>
+
+
+        <ProgressBar
+            android:id="@+id/pb_EnLayoutActivity_loading"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/progressbar_circle_shape" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_EnLayoutActivity_products"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

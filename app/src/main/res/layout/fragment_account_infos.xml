@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_100"
+    tools:context=".Profile.AccountInfos.AccountInfosFragment">
+
+
+    <RelativeLayout
+        android:elevation="4dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/tb_AccountInfosFragment"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/imv_AccountInfosFragment_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_baseline_close_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@id/imv_AccountInfosFragment_close"
+            android:text="@string/btn_name_prrivateinfo"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@id/tb_AccountInfosFragment"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:drawablePadding="8dp"
+                android:text="@string/stxt_infosPFragment_infoprivate"
+                android:textColor="@color/gray_500"
+                android:textStyle="bold"
+                app:drawableRightCompat="@drawable/pencell_vector2" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="4dp"
+                android:clipChildren="false"
+                android:hint="@string/etxt_name_hint"
+                android:textColorHint="@color/black"
+                app:boxBackgroundMode="none"
+                app:hintTextAppearance="@style/MyHintStyle"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/etxt_AccountInfosFragment_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/txt_regesterac_regester"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="26dp"
+                    android:background="@drawable/etxt_shape"
+                    android:maxLength="40"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/purple_500"
+                    android:textColorHint="@color/black"
+                    android:textCursorDrawable="@drawable/curseretxt_shape"
+                    android:translationY="10dp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="12dp"
+                android:clipChildren="false"
+                android:textColorHint="@color/black"
+                app:boxBackgroundMode="none"
+                android:hint="@string/etxt_phone_hint"
+                app:hintTextAppearance="@style/MyHintStyle"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etxt_AccountInfosFragment_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="26dp"
+                    android:background="@drawable/etxt_shape"
+                    android:fontFamily="@font/iran_yekan_reqular_mobile_fa_num"
+                    android:gravity="center_vertical|start"
+                    android:inputType="phone"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/purple_500"
+                    android:textColorHint="@color/black"
+                    android:textCursorDrawable="@drawable/curseretxt_shape"
+                    android:translationY="10dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="208dp"
+                android:layout_marginTop="12dp"
+                android:clipChildren="false"
+                android:textColorHint="@color/black"
+                app:boxBackgroundMode="none"
+                android:hint="@string/etxt_address"
+                app:hintTextAppearance="@style/MyHintStyle"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etxt_AccountInfosFragment_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_enterac_enter"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginRight="26dp"
+                    android:background="@drawable/etxt_shape"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/iran_yekan_reqular_mobile_fa_num"
+                    android:gravity="right"
+                    android:maxLines="6"
+                    android:minLines="6"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/colorPrimaryLight50"
+                    android:textColorHint="@color/black"
+                    android:textCursorDrawable="@drawable/curseretxt_shape"
+                    android:translationY="10dp"
+
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="12dp"
+                android:clipChildren="false"
+                android:hint="@string/etxt_codePosti_hint"
+                android:textColorHint="@color/black"
+                app:boxBackgroundMode="none"
+                app:hintTextAppearance="@style/MyHintStyle"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etxt_AccountInfosFragment_codePosti"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="26dp"
+                    android:background="@drawable/etxt_shape"
+                    android:fontFamily="@font/iran_yekan_reqular_mobile_fa_num"
+                    android:gravity="center_vertical|start"
+                    android:inputType="phone"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/purple_500"
+                    android:textColorHint="@color/black"
+                    android:textCursorDrawable="@drawable/curseretxt_shape"
+                    android:translationY="10dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/gray_200" />
+
+
+            <Button
+                android:id="@+id/btn_AccountInfosFragment_sumbit"
+                android:layout_marginTop="36dp"
+                android:layout_marginBottom="46dp"
+                android:layout_marginLeft="66dp"
+                android:layout_marginRight="66dp"
+                app:backgroundTint="@null"
+                android:text="@string/btn_sumbit_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_p500_shape"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <RelativeLayout
+
+        android:elevation="42dp"
+        android:id="@+id/rtl_AccountInfosFragment_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:id="@+id/linlay_AccountInfosFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imv_AccountInfosFragment_noconection"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:visibility="visible"
+                app:srcCompat="@drawable/noconnectioan_vector" />
+
+            <TextView
+                android:id="@+id/txt_AccountInfosFragment_notfound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:drawablePadding="4dp"
+                android:text="@string/stxt_chatfragment_problemconnecttoserver"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/txt_AccountInfosFragment_tryagain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="46dp"
+                android:drawablePadding="8dp"
+                android:text="@string/stxt_Splash_tryagain"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:visibility="visible"
+                app:drawableRightCompat="@drawable/tryagain_vector" />
+        </LinearLayout>
+
+
+        <ProgressBar
+            android:id="@+id/pb_AccountInfosFragment_loading"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/progressbar_circle_shape" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

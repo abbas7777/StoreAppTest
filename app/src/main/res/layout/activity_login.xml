@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/wave"
+    android:fillViewport="true"
+    tools:context=".Login.LoginActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+
+                <TextView
+                    android:id="@+id/txt_LoginActivity_enter"
+                    style="@style/TextViewCustom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/aghavan"
+                    android:text="@string/btn_name_enter"
+                    android:textColor="@color/black"
+                    android:textSize="53sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etxt_LoginActivity_phonelay"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_below="@id/txt_LoginActivity_enter"
+                    android:layout_marginTop="36dp"
+                    android:clipChildren="false"
+                    android:gravity="top"
+                    android:ellipsize="start"
+                    android:hint="@string/etxt_phone_hint"
+                    android:textColorHint="@color/black"
+                    app:boxBackgroundMode="none"
+                    app:hintTextAppearance="@style/MyHintStyle"
+                    app:hintTextColor="@color/black">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etxt_LoginActivity_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/txt_enterac_enter"
+                        android:layout_marginLeft="26dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="26dp"
+                        android:background="@drawable/etxt_shape"
+                        android:drawablePadding="8dp"
+                        android:ellipsize="start"
+                        android:fontFamily="@font/iran_yekan_reqular_mobile_fa_num"
+                        android:gravity="center_vertical|start"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="12dp"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="@color/colorPrimaryLight50"
+                        android:textColorHint="@color/black"
+                        android:textCursorDrawable="@drawable/curseretxt_shape"
+                        android:translationY="10dp"
+
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etxt_LoginActivity_passlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_below="@id/etxt_LoginActivity_phonelay"
+                    android:layout_marginTop="10dp"
+                    android:clipChildren="false"
+                    android:textColorHint="@color/black"
+                    app:boxBackgroundMode="none"
+                    app:hintTextAppearance="@style/MyHintStyle"
+                    app:hintTextColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etxt_LoginActivity_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="@string/etxt_password_hint"
+                        android:layout_below="@+id/etxt_LoginActivity_phonelay"
+                        android:layout_marginLeft="26dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="26dp"
+                        android:background="@drawable/etxt_shape"
+                        android:gravity="start|center_vertical"
+                        android:inputType="textPassword"
+                        android:paddingStart="46dp"
+                        android:paddingEnd="8dp"
+                        android:paddingTop="9.7dp"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="@color/purple_50"
+                        android:textColorHint="@color/black"
+                        android:textCursorDrawable="@drawable/curseretxt_shape"
+                        android:translationY="10dp" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:id="@+id/txt_LoginActivity_forgetpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etxt_LoginActivity_passlay"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="26dp"
+                    android:text="@string/stxt_enter_forgetpass" />
+
+                <ImageView
+                    android:padding="10dp"
+                    android:src="@drawable/ic_visibility_black_24dp"
+                    android:id="@+id/imv_LoginActivity_showpass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etxt_LoginActivity_phonelay"
+                    android:layout_marginLeft="37dp"
+                    android:layout_marginTop="40.5dp"
+                    android:onClick="ShowHidePass" />
+
+                <Button
+                    android:id="@+id/btn_LoginActivity_enter"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_below="@id/etxt_LoginActivity_passlay"
+                    android:layout_marginLeft="42dp"
+                    android:layout_marginTop="66dp"
+                    android:layout_marginRight="42dp"
+                    android:layout_marginBottom="46dp"
+                    android:background="@drawable/linlay_itemcats_shape"
+                    android:gravity="center"
+                    android:paddingTop="-2dp"
+                    android:text="@string/btn_name_enter"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

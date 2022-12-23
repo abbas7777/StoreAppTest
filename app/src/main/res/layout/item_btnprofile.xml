@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/rl_itemBtnProfile_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imv_itemBtnProfile_iamge"
+        android:layout_marginRight="16dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        tools:src="@drawable/comments_vector" />
+
+    <TextView
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@id/imv_itemBtnProfile_iamge"
+        android:id="@+id/txt_itemBtnProfile_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:drawableLeft="@drawable/ic_baseline_chevron_left_24"
+        android:padding="12dp"
+        android:textColor="@color/gray_500"
+        android:textSize="14sp"
+        tools:text="@string/btn_name_prrivateinfo" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_below="@id/txt_itemBtnProfile_title"
+        android:background="@color/gray_300" />
+</RelativeLayout>

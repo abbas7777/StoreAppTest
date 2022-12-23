@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Comments.AddComment.AddCommentActivity">
+
+    <RelativeLayout
+        android:elevation="4dp"
+        android:id="@+id/tb_AddCommentActivity"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/imv_AddCommentActivity_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/ic_baseline_close_24" />
+
+        <TextView
+            android:id="@+id/txt_AddCommentActivity_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@id/imv_AddCommentActivity_close"
+            android:textSize="22sp" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_AddCommentActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tb_AddCommentActivity"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_AddCommentActivity_r1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="26dp"
+                    android:text="@string/stxt_addComment_r1"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_AddCommentActivity_sugessted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_AddCommentActivity_r1"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="26dp"
+                    android:layout_marginBottom="16dp"
+                    android:drawableTop="@drawable/ic_like_gray500_vector"
+                    android:tag="@string/sbtn_suggested_tag"
+                    android:text="@string/sbtn_addComment_suggested"
+                    android:textColor="@color/gray_300"
+                    app:backgroundTint="@color/white" />
+
+                <Button
+                    android:tag="@string/sbtn_unsuggested_tag"
+                    android:id="@+id/btn_AddCommentActivity_unsugessted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_AddCommentActivity_r1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:drawableTop="@drawable/ic_disslike_gray500_vector"
+                    android:text="@string/sbtn_addComment_unsuggested"
+                    android:textColor="@color/gray_300"
+                    app:backgroundTint="@color/white" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="8dp"
+                android:drawableRight="@drawable/pencell_vector2"
+                android:drawablePadding="8dp"
+                android:text="@string/stxt_AddCommentActivity_comment"
+                android:textColor="@color/gray_500"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etxt_AddCommentActivity_Titlelay"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/txt_LoginActivity_enter"
+                android:layout_marginTop="8dp"
+                android:clipChildren="false"
+                android:ellipsize="start"
+                android:gravity="top"
+                android:hint="@string/etxt_title_hint"
+                android:textColorHint="@color/black"
+                app:boxBackgroundMode="none"
+                app:hintTextAppearance="@style/MyHintStyle"
+                app:hintTextColor="@color/black">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etxt_AddCommentActivity_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/txt_enterac_enter"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="26dp"
+                    android:background="@drawable/etxt_shape"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/iran_yekan_reqular_mobile_fa_num"
+                    android:gravity="center_vertical|start"
+                    android:maxLines="1"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/colorPrimaryLight50"
+                    android:textColorHint="@color/black"
+                    android:textCursorDrawable="@drawable/curseretxt_shape"
+                    android:translationY="10dp"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="28dp"
+                android:text="@string/stxt_addComment_desc"
+                android:textColor="@color/black" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etxt_AddCommentActivity_passage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_enterac_enter"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:background="@drawable/etxt_shape"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/iran_yekan_reqular_mobile_fa_num"
+                android:gravity="right"
+                android:maxLines="6"
+                android:minLines="6"
+                android:paddingLeft="8dp"
+                android:paddingTop="10dp"
+                android:paddingRight="12dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/colorPrimaryLight50"
+                android:textColorHint="@color/black"
+                android:textCursorDrawable="@drawable/curseretxt_shape"
+                android:translationY="10dp"
+
+                />
+
+
+            <Button
+
+                android:id="@+id/btn_AddCommentActivity_sumbit"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="66dp"
+                android:layout_marginBottom="46dp"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/btn_p500_shape"
+                android:text="@string/sbtn_addComment_sendComment"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

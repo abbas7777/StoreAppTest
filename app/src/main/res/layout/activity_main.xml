@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".Main.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_MainActivity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56.5dp"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetEnd="0dp"
+        android:contentInsetRight="0dp"
+        android:elevation="24dp"
+        android:layoutDirection="rtl"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:titleEnabled="true">
+
+        <LinearLayout
+            android:id="@+id/linlay_MainActivity_boxsearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:background="@drawable/txt_toolbar_shape"
+            android:drawablePadding="8dp"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/aghavan"
+                android:gravity="center_vertical|right"
+                android:paddingRight="8dp"
+                android:text="@string/stxt_searchbox"
+                android:textColor="@color/gray_500"
+                android:textSize="19sp"
+                app:drawableRightCompat="@drawable/ic_baseline_search_24" />
+
+            <TextView
+                style="@style/TextViewCustom"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/aghavan"
+                android:gravity="center_vertical"
+                android:paddingRight="1dp"
+                android:text="@string/app_name"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_alignParentBottom="true"
+
+                android:layout_gravity="bottom"
+                android:background="@color/gray_300" />
+
+
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <FrameLayout
+        android:id="@+id/frlay_MainActivity_host"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tb_MainActivity_toolbar"
+        android:layout_marginBottom="56dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/btm_MainActivity_menu"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:elevation="24dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:layoutDirection="rtl"
+        app:itemHorizontalTranslationEnabled="false"
+        app:itemRippleColor="@color/black"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu_navigation_items" />
+</RelativeLayout>
